@@ -27,13 +27,15 @@ This portfolio demonstrates a **full QA lifecycle** for a fictional manufacturin
 ---
 
 ## Project Structure
-.github/workflows/           ## GitHub Actions CI workflows
-agile/                       ## Agile docs – user stories, sprint backlog
-automation/                  ## Selenium UI automation framework
-data/                        ## Test data (CSV, JSON, Excel)
-docs/                        ## Test plan, RTM, defect log, requirements
-sql/                         ## SQL validation scripts
-tests/manual/                ## Manual test cases
+.github/workflows/                # GitHub Actions CI workflows
+agile/                            # Agile docs – user stories, sprint backlog
+automation/                       # Selenium UI automation framework
+data/                             # Test data (CSV, JSON, Excel)
+docs/                             # Test plan, RTM, defect log, requirements
+sql/                              # SQL validation scripts
+tests/manual/                     # Manual test cases
+performance/                      # JMeter performance tests
+api-tests/                        # Postman collections for API testing
 
 
 ---
@@ -110,11 +112,13 @@ Shipment tracking
 Queries verified against MySQL backend
 
 ## Reports
+| Report Type             | File Path / Location                         |
+| ----------------------- | -------------------------------------------- |
+| **Manual Testing**      | `/docs/TestPlan_and_Results.xlsx`            |
+| **UI Automation**       | `/automation/target/emailable-report.html`   |
+| **API Testing**         | `/docs/api-test-report.html`                 |
+| **Performance Testing** | `/performance/performance-report/index.html` |
 
-Manual Testing Report – /docs/TestPlan_and_Results.xlsx
-UI Automation Report – /automation/target/emailable-report.html
-API Test Report – /docs/api-test-report.html
-Performance Report – /performance/performance-report/index.html
 
 ## How to Run
 **UI Automation:**
