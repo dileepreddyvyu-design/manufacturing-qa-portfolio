@@ -87,8 +87,8 @@ newman run manufacturing.postman_collection.json \
     --reporter-html-export api-test-report.html
 ```
 
-## Reports:
-HTML API Report
+Reports:
+[HTML API Report](surefire-reports/emailable-report.html)
 
 ## Performance Testing (JMeter)
 20 virtual users, 60-second ramp-up
@@ -101,7 +101,7 @@ Inventory queries
 jmeter -n -t performance/manufacturing_load_test.jmx -l results.jtl -e -o performance-report
 ```
 
-## Reports:
+Reports:
 Performance Report Dashboard
 
 ## Database Validation (SQL)
