@@ -27,14 +27,13 @@ This portfolio demonstrates a **full QA lifecycle** for a fictional manufacturin
 ---
 
 ## Project Structure
-.github/workflows # GitHub Actions CI workflows
-agile/ # Agile docs, user stories, sprint backlog
-automation/ # Selenium UI automation framework
-data/ # Test data (CSV, JSON, Excel)
-docs/ # Test plan, RTM, defect log
-requirements/ # Business and functional requirements
-sql/ # SQL validation scripts
-tests/manual/ # Manual test cases
+.github/workflows/           # GitHub Actions CI workflows
+agile/                       # Agile docs – user stories, sprint backlog
+automation/                  # Selenium UI automation framework
+data/                        # Test data (CSV, JSON, Excel)
+docs/                        # Test plan, RTM, defect log, requirements
+sql/                         # SQL validation scripts
+tests/manual/                # Manual test cases
 
 
 ---
@@ -49,12 +48,17 @@ tests/manual/ # Manual test cases
 ---
 
 ## UI Automation
-- Automated flows for:
-  - **Order creation and approval**
-  - **Inventory updates**
-  - **Shipping confirmation**
-- Cross-browser support (**Chrome**, **Edge**)
-- Assertions for UI validations and text content
+Automated flows for:
+
+Order creation and approval
+
+Inventory updates
+
+Shipping confirmation
+
+Cross-browser support (Chrome, Edge)
+
+Assertions for UI validations and text checks
 
 **Run automation:**
 ```bash
@@ -64,10 +68,12 @@ mvn clean test -Dbrowser=edge
 ```
 
 ## API Testing
-Postman collections for manufacturing order APIs
 Validations for:
-Order creation
-Status updates
+
+Order creation APIs
+
+Status update APIs
+
 Inventory APIs
 
 **Run API tests (Newman CLI):**
