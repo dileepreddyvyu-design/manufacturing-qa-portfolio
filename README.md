@@ -27,15 +27,15 @@ This portfolio demonstrates a **full QA lifecycle** for a fictional manufacturin
 ---
 
 ## Project Structure
-.github/workflows/                # GitHub Actions CI workflows
-agile/                            # Agile docs – user stories, sprint backlog
-automation/                       # Selenium UI automation framework
-data/                             # Test data (CSV, JSON, Excel)
-docs/                             # Test plan, RTM, defect log, requirements
-sql/                              # SQL validation scripts
-tests/manual/                     # Manual test cases
-performance/                      # JMeter performance tests
-api-tests/                        # Postman collections for API testing
+📂 .github/workflows     → GitHub Actions CI configurations
+📂 agile-docs            → User stories, acceptance criteria, sprint backlog
+📂 automation            → Selenium UI automation framework
+📂 test-data              → CSV, JSON, Excel files for test input
+📂 docs                   → Test plans, RTM, defect logs, requirements
+📂 sql                    → SQL scripts for database validation
+📂 manual-tests           → Manual test cases
+📂 performance            → JMeter performance test scripts & reports
+📂 api-tests              → Postman collections for API testing
 
 
 ---
@@ -112,12 +112,12 @@ Shipment tracking
 Queries verified against MySQL backend
 
 ## Reports
-| Report Type             | File Path / Location                         |
-| ----------------------- | -------------------------------------------- |
-| **Manual Testing**      | `/docs/TestPlan_and_Results.xlsx`            |
-| **UI Automation**       | `/automation/target/emailable-report.html`   |
-| **API Testing**         | `/docs/api-test-report.html`                 |
-| **Performance Testing** | `/performance/performance-report/index.html` |
+| Report Type        | File Path / Location                         | Description                                          |
+| ------------------ | -------------------------------------------- | ---------------------------------------------------- |
+| **Manual Testing** | `/docs/TestPlan_and_Results.xlsx`            | Detailed test plan, scenarios, and execution results |
+| **UI Automation**  | `/automation/target/emailable-report.html`   | HTML report for Selenium automation runs             |
+| **API Testing**    | `/docs/api-test-report.html`                 | HTML report for API test execution (Newman)          |
+| **Performance**    | `/performance/performance-report/index.html` | JMeter dashboard for load & stress test results      |
 
 
 ## How to Run
