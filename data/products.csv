@@ -1,0 +1,3 @@
+product_id,name,uom,safety_stock,standard_cost
+P-100,Widget A,EA,50,12.5
+P-200,Gadget B,EA,30,22.0

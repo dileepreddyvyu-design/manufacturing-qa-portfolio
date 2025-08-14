@@ -1,0 +1,3 @@
+inspection_id,wo_id,sample_size,defects,result
+INSP-1,WO-1001,8,1,PASS
+INSP-2,WO-1002,5,2,FAIL
